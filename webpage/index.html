@@ -1,0 +1,116 @@
+<!--
+
+	WELCOME :), Are you curious? 
+
+-->
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>BOROS - A simple script to be more and more compatible.</title>
+	<meta name="description" content="BOROS.js is able to detect the browser and operating system that is running and adds a particular class to HTML tag." />
+	<meta property="og:title" content="BOROS.js - A simple script to be more and more compatible." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://boros.ataxs.com.ar/" />
+	<meta property="og:site_name" content="BOROS.js" />	
+	<meta name="language" content="es" />
+	<meta name="distribution" content="Global" />
+	<meta name="category" content="Develpment" />
+	<meta name="author" content="twitter.com/agusrdelia" />
+	<meta name="copyright" content="agusrdelia@gmail.com" />
+	<meta http-equiv="Content-Language" content="en-US" /> 
+	<meta name="country" content="AR" /> 
+	<meta name="revisit-after" content="1 Days"> 
+	<meta name="Robots" content="all" /> 
+	<meta http-equiv="Pragma" content="no-cache" />
+	<link rel="canonical" href="http://boros.ataxs.com.ar/" />
+	<link rel="stylesheet" href="public/styles/boros.css" />
+	<script type="text/javascript" src="boros.min.js"></script>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-63355520-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<h1>BOROS.js <small>A simple script to be more and more and <b>more compatible</b>. And more...</small></h1>
+<div class="buttons">
+	<a href="http://github.com/agusrdelia/boros" title="Download" target="_blank" class="btn" rel="nofollow">Download</a>
+</div>
+<div class="content">
+	<h2>What is BOROS.js?</h2>
+	<p>BOROS.js is able to detect the browser and Operative System that is running and them add a particular class to HTML tag. For example:<br /><pre id="native-boros"></pre></p>
+	<h2>What Support?</h2>
+	<p>Windows: <span>(8, 7, Vista, XP64 and XP)</span>, Linux, Macintosh, Apple Device (iPod, iPhone, iPad), IOS, Android and Blackberry: <span>(10, PlayBook, 7 and 6)</span></p>
+	<p>Chrome: <span>(24, 23, 22, 21, 20 and more)</span>, Firefox <span>(20, 19, 18, and more)</span>, iExplorer <span>(10, 9, 8, 7, 6)</span>, Safari and Opera</p>
+	<h2>CSS Use</h2>
+	<div class="list clearfix">
+		<ul>
+			<li><strong>Windows</strong><span>class="os-win"</span></li>
+			<li><strong>Windows 8</strong><span>class="os-win os-v-8"</span></li>
+			<li><strong>Windows 7</strong><span>class="os-win os-v-7"</span></li>
+			<li><strong>Windows Vista</strong><span>class="os-win os-v-vista"</span></li>
+			<li><strong>Windows XP 64</strong><span>class="os-win os-v-xp64"</span></li>
+			<li><strong>Windows XP</strong><span>class="os-win os-v-xp"</span></li>
+			<li><strong>Windows old version</strong><span>class="os-win-old"</span></li>
+			<li><strong>Windows Phone</strong><span>class="os-win-phone os-v-#_#"</span></li>
+			<li><strong>Mac OS X</strong><span>class="os-mac-osx os-v-#_#_#"</span></li>
+			<li><strong>iOS iPad</strong><span>class="ios-ipad os-v-#_#_#"</span></li>
+			<li><strong>iOS iPhone</strong><span>class="ios-iphone os-v-#_#_#"</span></li>
+			<li><strong>iOS iPod</strong><span>class="ios-ipod os-v-#_#_#"</span></li>
+			<li><strong>Linux</strong><span>class="os-lin"</span></li>
+			<li><strong>Android</strong><span>class="os-android os-v-#_#_#"</span></li>
+			<li><strong>Blackberry</strong><span>class="os-bb os-v-##_#"</span></li>
+			<li><strong>Blackberry PlayBook</strong><span>class="os-playbook os-v-##_#"</span></li>
+		</ul>
+		<ul>
+			<li><strong>Chrome</strong><span>class="nav-ch nav-v-##_#"</span></li>
+			<li><strong>Firefox</strong><span>class="nav-ff nav-v-##_#"</span></li>
+			<li><strong>Opera</strong><span>class="nav-op nav-v-##"</span></li>
+			<li><strong>Safari</strong><span>class="nav-sa nav-v-#_#"</span></li>
+			<li><strong>iExplorer 10</strong><span>class="nav-ie nav-v-10"</span></li>
+			<li><strong>iExplorer 9</strong><span>class="nav-ie nav-v-9"</span></li>
+			<li><strong>iExplorer 8</strong><span>class="nav-ie nav-v-8"</span></li>
+			<li><strong>iExplorer 7</strong><span>class="nav-ie nav-v-7"</span></li>
+			<li><strong>iExplorer 6</strong><span>class="nav-ie nav-v-6"</span></li>
+		</ul>
+	</div>
+	<h2>Javascript Use</h2>
+	<h3>BOROS.start( @userAgent )</h3>
+	<p>Return the current browser navigator data and add a class for each values. <b>@userAgent</b> it's a option to get a specific navigator data. </p>
+	<pre>//Get current Browser Data.
+BOROS.start()</pre>
+	<pre>//Get a specific Browser Data.
+BOROS.start('<script type="text/javascript">document.write(navigator.userAgent)</script>')</pre>
+	<h3>BOROS.data</h3>
+	<p>Return an Object with the last BOROS.start() data.</p>
+	<pre>BOROS.data = {
+	'OS' : '<script type="text/javascript">document.write(BOROS.data.OS)</script>',
+	'OSversion' : 'os-v-<script type="text/javascript">document.write(BOROS.data.OSversion)</script>',
+	'Browser': '<script type="text/javascript">document.write(BOROS.data.Browser)</script>',
+	'BrowserVersion' : 'nav-v-<script type="text/javascript">document.write(BOROS.data.BrowserVersion)</script>'
+}
+//How to use?
+if(BOROS.data.OS == 'os-win'){
+	alert('Yababaaayyy');
+}</pre>
+</div>
+<div class="footer clearfix">
+	<p style="float:left;">Developer: agusrdelia@gmail.com | tw: @agusrdelia | 2012</p>
+	<a href="mailto: agusrdelia@gmail.com" title="Report a Bug" style="float:right;">Report a Bug</a>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var a = BOROS.data;
+	$('#native-boros').text('<html class="'+ a.OS + ' os-v-'+ a.OSversion + ' ' + a.Browser + ' nav-v-' + a.BrowserVersion + '">');
+</script>
+</body>
+</html>
